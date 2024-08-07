@@ -13,8 +13,9 @@ Each nested call is wrapped with `withContext` that changes a coroutine name to 
 
 Results demonstrate that enabling `DEBUG_PROPERTY_NAME` does not have a significant performance impact on coroutines.
 
+GitHub Actions `ubuntu-latest` with Temurin JDK 21:
 ```
 Benchmark                      (kotlinCoroutinesDebug)   Mode  Cnt    Score   Error  Units
-CoroutinesDebugBenchmark.test                       on  thrpt   10  150.640 ± 0.559  ops/s
-CoroutinesDebugBenchmark.test                      off  thrpt   10  156.090 ± 0.186  ops/s
+CoroutinesDebugBenchmark.test                       on  thrpt   10  185.938 ± 0.121  ops/s
+CoroutinesDebugBenchmark.test                      off  thrpt   10  187.970 ± 0.071  ops/s
 ```
